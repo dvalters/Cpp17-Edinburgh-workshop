@@ -6,6 +6,10 @@ All the slides etc. are linked from this google doc: https://docs.google.com/doc
 
 https://www.bfilipek.com/2017/01/cpp17features.html
 
+## Compiler support
+
+https://en.cppreference.com/w/cpp/compiler_support
+
 ## Structured bindings
 
 ### How does `std::tie` actually work?
