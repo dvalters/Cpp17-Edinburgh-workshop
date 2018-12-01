@@ -4,18 +4,22 @@
 
 int const TOTAL_EPISODES = 67;
 
+// C++17: Use nested namespace syntax
 namespace cpp::edinburgh::example {
       void test(std::map<std::string, int> const& episode_counts)
       {
-
+        // C++17: Can we use the range TS feature?
         for (std::map<std::string, int>::const_iterator it = episode_counts.begin();
           it != episode_counts.end();
           ++it)
+        // Not sure here, return to it later on
+        //for (std::map<std::string, int>::const_iterator it : episode_counts)
         {
           std::cout << it->first << " has been in " << it->second << " episodes\n";
-
-          int over_half = it->second - (TOTAL_EPISODES / 2);
-          if (over_half > 0) {
+          // C++17: Let's use if-initialisers!
+          // We can constrain our variables to be within the if scope now:
+          //int over_half = it->second - (TOTAL_EPISODES / 2);
+          if (auto over_half = it->second - (TOTAL_EPISODES /2); over_half > 0) {
             std::cout << "That's " << over_half << " more than half!\n";
           }
 
