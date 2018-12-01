@@ -28,6 +28,7 @@ std::optional<int> get_42(int i) {
 int main() {
     int i;
     // forty_two = get_42(i);
+    // if (forty_two) std::cout << forty_two << "\n";
     if (get_42(i)) std::cout << i  << "\n";
     else std::cout << "OH NO" << "\n";
 }
