@@ -4,6 +4,8 @@ Codebase, 1st December 2018
 
 All the slides etc. are linked from this google doc: https://docs.google.com/document/d/1WSBj-cBEmyK5XTD4YVFjGc8AqEAzQ8dMoguI9y-uXiM/edit# 
 
+https://www.bfilipek.com/2017/01/cpp17features.html
+
 ## Structured bindings
 
 ### How does `std::tie` actually work?
