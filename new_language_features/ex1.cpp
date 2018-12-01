@@ -24,6 +24,11 @@ namespace cpp::edinburgh::example {
           }
 
           std::cout << "Their name shares a starting letter with ";
+          // C++17: can use a fallthrough attribute here to indicate to
+          // compiler that we expect not to have a break statement
+          // after each case
+          // To get this warning to show up in latest versions of GCC add:
+          // -Wextra, when compiling without the attribute [[fallthrough]]
           switch (it->first[0]) {
             case 'G': std::cout << "George ";
             [[fallthrough]];
