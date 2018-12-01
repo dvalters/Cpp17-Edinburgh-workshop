@@ -26,7 +26,9 @@ namespace cpp::edinburgh::example {
           std::cout << "Their name shares a starting letter with ";
           switch (it->first[0]) {
             case 'G': std::cout << "George ";
+            [[fallthrough]];
             case 'R': std::cout << "Raymond Richard ";
+            [[fallthrough]];
             case 'M': std::cout << "Martin ";
               std::cout << "which is probably important!";
               break;
