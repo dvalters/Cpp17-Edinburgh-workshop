@@ -4,9 +4,7 @@
 
 int const TOTAL_EPISODES = 67;
 
-namespace cpp {
-  namespace edinburgh {
-    namespace example {
+namespace cpp::edinburgh::example {
       void test(std::map<std::string, int> const& episode_counts)
       {
 
@@ -34,8 +32,6 @@ namespace cpp {
           std::cout << "\n\n";
         }
       }
-    }
-  }
 }
 
 int main() {
